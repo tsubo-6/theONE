@@ -432,7 +432,7 @@ public class DTNHost implements Comparable<DTNHost> {
 			// 新しいwaipointを設定
 			if (!setNextWaypoint()) { // get a new waypoint
 				//避難所を知っているノード番号の範囲を指定
-				if(goSwitch||(address >= 0 && address <= 71)) {
+				if(goSwitch||(address >= 0 && address <= 111)) {
 					//System.out.println("ノード"+address+"はもう動きません!");
 					arrivingNodeCounter+=1;
 					System.out.println("避難所到達:"+arrivingNodeCounter+"人");

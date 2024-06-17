@@ -103,7 +103,8 @@ public class PointsOfInterest {
 	}
 	
 	public MapNode forceSelectPoi(int num) {
-		List<MapNode> pois = poiLists.get(num);
+		int randomValue = rng.nextInt(5) + 1;
+		List<MapNode> pois = poiLists.get(randomValue);
 		return pois.get(rng.nextInt(pois.size()));
 	}
  
